@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 70% 97%;
+    --foreground: 36 30% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 36 30% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 36 30% 20%;
+
+    --primary: 36 80% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 45 90% 90%;
+    --secondary-foreground: 36 30% 20%;
+
+    --muted: 36 10% 90%;
+    --muted-foreground: 36 10% 40%;
+
+    --accent: 36 80% 85%;
+    --accent-foreground: 36 30% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 36 30% 80%;
+    --input: 36 30% 80%;
+    --ring: 36 70% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 36 30% 10%;
+    --foreground: 36 10% 90%;
+
+    --card: 36 30% 15%;
+    --card-foreground: 36 10% 90%;
+
+    --popover: 36 30% 15%;
+    --popover-foreground: 36 10% 90%;
+
+    --primary: 36 70% 50%;
+    --primary-foreground: 36 10% 10%;
+
+    --secondary: 36 30% 20%;
+    --secondary-foreground: 36 10% 90%;
+
+    --muted: 36 15% 25%;
+    --muted-foreground: 36 10% 70%;
+
+    --accent: 36 50% 25%;
+    --accent-foreground: 36 10% 90%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 36 10% 90%;
+
+    --border: 36 15% 30%;
+    --input: 36 15% 30%;
+    --ring: 36 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-lora;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair font-semibold;
+  }
+}
+
+@layer components {
+  .temple-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .nav-link {
+    @apply relative text-foreground hover:text-primary transition-colors duration-200 after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-gold after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+  }
+  
+  .section-title {
+    @apply font-playfair text-3xl md:text-4xl font-bold text-gold-dark mb-6 relative;
+  }
+  
+  .section-title::after {
+    @apply content-[''] absolute w-20 h-1 bg-gold-light bottom-0 left-0 -mb-3;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+}
