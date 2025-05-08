@@ -23,7 +23,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USER = 'fastrack2442@gmail.com'
 # use an environment variable in production, e.g. os.getenv('EMAIL_PASS')
-EMAIL_PASS = os.getenv('EMAIL_PASS', '20021214S@da')
+EMAIL_PASS = os.getenv('EMAIL_PASS', 'password_here')
 
 # ─── Utilities ────────────────────────────────────────────────────────────────
 
