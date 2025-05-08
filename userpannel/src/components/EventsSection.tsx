@@ -40,7 +40,7 @@ const EventsSection = () => {
               variant="outline"
               className="border-gold hover:bg-gold-light/20 text-gold-dark"
             >
-              View All Events >>
+              View All Events {'>>'}
             </Button>
           </Link>
         </div>
