@@ -35,6 +35,7 @@ def format_datetime(dt):
 
 # ─── “User-Panel” Routes ───────────────────────────────────────────────────────
 
+
 @app.route('/donars', methods=['GET'])
 def user_get_donars():
     db = get_db_connection()
@@ -474,6 +475,27 @@ def admin_delete_ebook(ebook_id):
     cur.close()
     db.close()
     return jsonify({'message': 'Ebook deleted'}), 200
+
+
+
+
+
+
+@app.route('/api/marquee', methods=['GET'])
+def get_marquee():
+    db = get_db_connection()
+    cur = db.cursor()
+    cur.execute("SELECT text FROM marquee ORDER BY created_at DESC LIMIT 1")
+    result = cur.fetchone()
+    cur.close()
+    db.close()
+    if result:
+        return jsonify({'marquee': result[0]})
+    else:
+        return jsonify({'marquee': ''})
+
+
+
 
 # ─── Main ──────────────────────────────────────────────────────────────────────
 
