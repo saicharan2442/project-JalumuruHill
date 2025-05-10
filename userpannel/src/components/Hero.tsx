@@ -28,7 +28,7 @@ const Hero = () => {
           <p className="text-lg md:text-xl mb-8 max-w-prose">
             Experience spiritual tranquility and cultural heritage at one of India's most sacred temple sites.
           </p>
-          <p><b>NOTE : </b> This website is under Development Stage for Any Temple Donation <br /> Contact to <a href="tel:+918374104423"><b>+91 8374104423</b></a></p><br />
+          <p><b>NOTE : </b> This website is under Development Stage for Any Temple Donation <br /> Contact to <a href="https://jalamuru.blogspot.com/2025/05/blog-post.html"><b>+91 8374104423</b></a></p><br />
 
           <Link to="/temples">
             <Button className="bg-gold hover:bg-gold-dark text-foreground font-semibold px-6 py-6 text-lg rounded-md transition-all duration-300 shadow-lg hover:shadow-xl">
