@@ -55,12 +55,12 @@ const ContactPage = () => {
               >
                 <div className="flex items-start gap-4 mb-3">
                   <div
-                    onMouseDown={() => handleMouseDown(contact.image_url)} // Trigger the enlargement on mouse hold
+                    onMouseDown={() => handleMouseDown(contact.imageUrl)} // Trigger the enlargement on mouse hold
                     onMouseUp={handleMouseUp} // Reset on mouse release
                     className="relative"
                   >
                     <img
-                      src={contact.image_url} // This should be a valid image URL or path
+                      src={contact.imageUrl} // This should be a valid image URL or path
                       alt={contact.name}
                       className="w-20 h-20 object-cover rounded-full border-2 border-yellow-200"
                     />
@@ -75,10 +75,10 @@ const ContactPage = () => {
                       {contact.email}
                     </a>
                     <a
-                      href={`tel:${contact.mobile_number}`} // Ensure this matches your backend field name
+                      href={`tel:${contact.mobile}`} // Ensure this matches your backend field name
                       className="text-sm text-yellow-700 hover:text-yellow-500"
                     >
-                      {contact.mobile_number} {/* Adjusted to show phone number from backend */}
+                      {contact.mobile} {/* Adjusted to show phone number from backend */}
                     </a>
                   </div>
                 </div>

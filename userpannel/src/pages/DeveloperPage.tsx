@@ -57,7 +57,7 @@ const DeveloperPage = () => {
 
             <div className="mt-8 p-6 bg-temple-cream rounded-md">
               <h3 className="font-playfair text-xl font-semibold text-gold-dark mb-4 text-center">
-                Contact the Development Team
+                Contact the Developer
               </h3>
 
               <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
