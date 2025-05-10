@@ -11,8 +11,8 @@ import {
 
 const navItems = [
   { name: "Home", path: "/" },
+   { name: "Temples", path: "/temples" },
   { name: "Donors", path: "/donors" },
-  { name: "Temples", path: "/temples" },
   { name: "Events", path: "/events" },
   { name: "Ebooks", path: "/ebooks" },
   { name: "Trust Licence", path: "/trust-licence" },
@@ -33,13 +33,16 @@ const Navbar = () => {
       <div className="temple-container">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
+
+
           <Link to="/" className="flex items-center h-full">
             <img
-              src="/logo.png"
+              src="/logo1.png"
               alt="Jalumuru Hill Logo"
               className="h-full max-h-16 object-contain"
             />
           </Link>
+          
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6">
