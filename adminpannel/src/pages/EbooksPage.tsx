@@ -178,6 +178,7 @@ const EbooksPage = () => {
       <PageHeader
         title="Ebooks"
         description="Manage ebook collection"
+        
         action={
           <div className="flex gap-2">
             <Dialog open={dialogMode === "add"} onOpenChange={(v) => (v ? setDialogMode("add") : resetForm())}>
