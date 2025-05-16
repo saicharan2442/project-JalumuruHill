@@ -46,7 +46,7 @@ const Hero = () => {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/KBYSpR8N6pc?si=tbDvZbqEiYbcwm6y"
+              src="https://www.youtube.com/embed/l8pN_11Ilrc?si=vm3FV5FErxQYEWvj"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

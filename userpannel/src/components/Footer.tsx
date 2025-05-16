@@ -1,7 +1,9 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaDiscord } from "react-icons/fa";
 import { Facebook, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+
 
 const Footer = () => {
   return (
@@ -18,7 +20,7 @@ const Footer = () => {
               heritage, home to ancient temples and sacred rituals.
             </p>
             <div className="flex space-x-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.facebook.com/share/1DUg7x8tuX/" target="_blank" rel="noopener noreferrer" 
                 className="p-2 bg-gold/20 rounded-full hover:bg-gold/40 transition-colors">
                 <Facebook size={18} />
               </a>
@@ -30,6 +32,14 @@ const Footer = () => {
                 className="p-2 bg-gold/20 rounded-full hover:bg-gold/40 transition-colors">
                 <Youtube size={18} />
               </a>
+               <a
+                             href="https://discord.gg/tfMwAB9T"
+                             target="_blank"
+                             rel="noopener noreferrer"
+                            className="p-2 bg-gold/20 rounded-full hover:text-gold hover:bg-temple-cream p-2 rounded-full"
+                            >
+                            <FaDiscord size={20} />
+                            </a>
             </div>
           </div>
           
@@ -61,7 +71,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/trust-licence" className="hover:text-gold-light transition-colors">
-                  Trust Licence Documentation
+                  Trust Licence 
                 </Link>
               </li>
             </ul>
@@ -90,7 +100,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-4 border-t border-gold-light/30 text-center text-sm">
-          <p>© {new Date().getFullYear()} Jalumuru Hill. All rights reserved.</p>
+          <p> <b>🙏🙏 Saicharan_Sada 🙏🙏</b> <br />© {new Date().getFullYear()} Jalumuru Hill. - All rights reserved.</p>
         </div>
       </div>
     </footer>

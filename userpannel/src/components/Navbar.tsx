@@ -8,6 +8,7 @@ import {
   Youtube,
   ChevronDown,
 } from "lucide-react";
+import { FaDiscord } from "react-icons/fa";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -108,7 +109,7 @@ const Navbar = () => {
             {/* Social Icons */}
             <div className="hidden md:flex items-center space-x-4">
               <a
-                href="https://www.facebook.com/YourPage"
+                href="https://www.facebook.com/share/1DUg7x8tuX/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gold-dark hover:text-gold hover:bg-temple-cream p-2 rounded-full"
@@ -130,6 +131,14 @@ const Navbar = () => {
                 className="text-gold-dark hover:text-gold hover:bg-temple-cream p-2 rounded-full"
               >
                 <Youtube size={20} />
+              </a>
+              <a
+               href="https://discord.gg/tfMwAB9T"
+               target="_blank"
+               rel="noopener noreferrer"
+              className="text-gold-dark hover:text-gold hover:bg-temple-cream p-2 rounded-full"
+              >
+              <FaDiscord size={20} />
               </a>
             </div>
 
@@ -157,7 +166,7 @@ const Navbar = () => {
                 ))}
                 <div className="flex justify-center space-x-4 pt-4 border-t border-gold-light/30 mt-2">
                   <a
-                    href="https://www.facebook.com/YourPage"
+                    href="https://www.facebook.com/share/1DUg7x8tuX/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gold-dark hover:text-gold hover:bg-temple-cream p-2 rounded-full"
@@ -180,6 +189,14 @@ const Navbar = () => {
                   >
                     <Youtube size={20} />
                   </a>
+                  <a
+    href="https://discord.gg/tfMwAB9T"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gold-dark hover:text-gold hover:bg-temple-cream p-2 rounded-full"
+  >
+    <FaDiscord size={20} />
+  </a>
                 </div>
               </div>
             </div>
