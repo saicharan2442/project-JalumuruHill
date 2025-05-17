@@ -100,7 +100,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-4 border-t border-gold-light/30 text-center text-sm">
-          <p> <b>🙏🙏 Saicharan_Sada 🙏🙏</b> <br />© {new Date().getFullYear()} Jalumuru Hill. - All rights reserved.</p>
+          <p> <b>🙏🙏 Saicharan_Sada | Developer🙏🙏</b> <br />© {new Date().getFullYear()} Jalumuru Hill. - All rights reserved.</p>
         </div>
       </div>
     </footer>

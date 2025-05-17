@@ -9,6 +9,8 @@ import DonorsPage from "./pages/DonorsPage";
 import TemplesPage from "./pages/TemplesPage";
 import EventsPage from "./pages/EventsPage";
 import EbooksPage from "./pages/EbooksPage";
+import BlogsPage from "./pages/BlogsPage";
+import ReelsPage from "./pages/ReelsPage";
 import ContactPage from "@/pages/ContactPage";
 import TrustLicencePage from "./pages/TrustLicencePage";
 import DeveloperPage from "./pages/DeveloperPage";
@@ -67,6 +69,7 @@ const App = () => {
             <Route path="/events" element={<EventsPage />} />
             <Route path="/ebooks" element={<EbooksPage />} />
             <Route path="/trust-licence" element={<TrustLicencePage />} />
+            <Route path="/blogs" element={<BlogsPage />} />
             <Route path="/developer" element={<DeveloperPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<NotFound />} />

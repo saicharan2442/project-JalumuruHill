@@ -17,6 +17,7 @@ const navItems = [
   { name: "Events", path: "/events" },
   { name: "Ebooks", path: "/ebooks" },
   { name: "Trust Licence", path: "/trust-licence" },
+  { name: "Blogs", path: "/blogs" },
   { name: "Contact Us", path: "/contact" },
   { name: "Developer", path: "/developer" },
 ];
@@ -103,7 +104,7 @@ const Navbar = () => {
                     ))}
                   </div>
                 )}
-              </div>
+              </div> 
             </div>
 
             {/* Social Icons */}
