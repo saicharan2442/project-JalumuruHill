@@ -24,11 +24,11 @@ const Footer = () => {
                 className="p-2 bg-gold/20 rounded-full hover:bg-gold/40 transition-colors">
                 <Facebook size={18} />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.instagram.com/jalumuruhill?igsh=eWVzZ2JvczVmYmpy" target="_blank" rel="noopener noreferrer" 
                 className="p-2 bg-gold/20 rounded-full hover:bg-gold/40 transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" 
+              <a href="https://www.youtube.com/@JalumuruHill" target="_blank" rel="noopener noreferrer" 
                 className="p-2 bg-gold/20 rounded-full hover:bg-gold/40 transition-colors">
                 <Youtube size={18} />
               </a>

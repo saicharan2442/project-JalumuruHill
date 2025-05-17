@@ -118,7 +118,7 @@ const Navbar = () => {
                 <Facebook size={20} />
               </a>
               <a
-                href="https://www.instagram.com/YourProfile"
+                href="https://www.instagram.com/jalumuruhill?igsh=eWVzZ2JvczVmYmpy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gold-dark hover:text-gold hover:bg-temple-cream p-2 rounded-full"
@@ -126,7 +126,7 @@ const Navbar = () => {
                 <Instagram size={20} />
               </a>
               <a
-                href="https://www.youtube.com/YourChannel"
+                href="https://www.youtube.com/@JalumuruHill"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gold-dark hover:text-gold hover:bg-temple-cream p-2 rounded-full"
@@ -175,7 +175,7 @@ const Navbar = () => {
                     <Facebook size={20} />
                   </a>
                   <a
-                    href="https://www.instagram.com/YourProfile"
+                    href="https://www.instagram.com/jalumuruhill?igsh=eWVzZ2JvczVmYmpy"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gold-dark hover:text-gold hover:bg-temple-cream p-2 rounded-full"
@@ -183,7 +183,7 @@ const Navbar = () => {
                     <Instagram size={20} />
                   </a>
                   <a
-                    href="https://www.youtube.com/YourChannel"
+                    href="https://www.youtube.com/@JalumuruHill"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gold-dark hover:text-gold hover:bg-temple-cream p-2 rounded-full"
