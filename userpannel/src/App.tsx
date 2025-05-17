@@ -1,3 +1,4 @@
+// src/App.tsx
 import { useEffect, useRef } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -10,13 +11,19 @@ import TemplesPage from "./pages/TemplesPage";
 import EventsPage from "./pages/EventsPage";
 import EbooksPage from "./pages/EbooksPage";
 import BlogsPage from "./pages/BlogsPage";
-import ReelsPage from "./pages/ReelsPage";
 import ContactPage from "@/pages/ContactPage";
 import TrustLicencePage from "./pages/TrustLicencePage";
 import DeveloperPage from "./pages/DeveloperPage";
-
-import ChatBot from "@/components/ChatBot";
 import NotFound from "./pages/NotFound";
+import ChatBot from "@/components/ChatBot";
+
+// Declare global window types
+declare global {
+  interface Window {
+    pauseBackgroundAudio: () => void;
+    playBackgroundAudio: () => void;
+  }
+}
 
 const queryClient = new QueryClient();
 
@@ -36,7 +43,7 @@ const App = () => {
         });
       };
 
-      tryPlay(); // Try to autoplay on mount
+      tryPlay();
 
       const handleUserInteraction = () => {
         tryPlay();
@@ -44,6 +51,14 @@ const App = () => {
       };
 
       document.addEventListener("click", handleUserInteraction);
+
+      // Expose control functions globally
+      window.pauseBackgroundAudio = () => {
+        audio.pause();
+      };
+      window.playBackgroundAudio = () => {
+        tryPlay();
+      };
     }
   }, []);
 
