@@ -1,38 +1,34 @@
 
 export interface Temple {
   id: string;
-  name: string;
-  donor: string;
+  tname: string;
+  donar: string;
   village: string;
   district: string;
-  contactNumber: string;
-  imageUrl: string;
-  createdAt: string;
+  ph_no: string;
+  image_url: string;
+  created_at: string;
 }
 
 export interface Donor {
   id: string;
-  name: string;
+  Name: string;
   village: string;
   district: string;
   email: string;
-  phone: string;
-  donationAmount: number;
-  donationType: string;
-  date: string;
-  createdAt: string;
+  phone_number: string;
+  donated: string;
+  donated_at: string;
+  created_at: string;
 }
 
 export interface Event {
   id: string;
-  name: string;
-  date: string;
-  templeId: string;
-  templeName: string;
-  description: string;
-  createdAt: string;
-}
-
+  eventname: string;
+  event_date: string;
+  event_temple: string;
+  discription: string;
+  created_at: string;
 export interface Contact {
   id: string;
   role: string;
